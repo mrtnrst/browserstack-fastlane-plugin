@@ -14,8 +14,8 @@ module Fastlane
       def self.run(params)
         browserstack_username = params[:browserstack_username] # Required
         browserstack_access_key = params[:browserstack_access_key] # Required
-        custom_id = params[:custom_id]
         file_path = params[:file_path].to_s # Required
+        custom_id = params[:custom_id]
 
         validate_file_path(file_path)
 
